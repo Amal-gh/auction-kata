@@ -24,4 +24,4 @@
 - Properly type all functions and variables to ensure code robustness and clarity.
 - Add a linter and a prettier to maintain code consistency and detect potential errors.
 - Set up husky and pre-commit script
-- Configure Jest & add Unit tests 
+- Configure Jest & add Unit tests
