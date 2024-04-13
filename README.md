@@ -31,6 +31,8 @@ Once the application is launched on `http://localhost:4200/`, you can start test
 
 You can also run unit tests to verify that the code works and returns the expected result.
 
+**` In the example provided, the final price should be 140€. Buyer E wins the auction with a bid of 140 euros, rather than 130€..** `**
+
 **A demo is also available in the repository [DEMO](./src/assets/Kata_Auction_demo.mp4).**
 To see a demo video, click the screenshot
 
