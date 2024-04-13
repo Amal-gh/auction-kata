@@ -29,4 +29,6 @@ Once the application is launched on `http://localhost:4200/`, you can start test
 
 - The name and the winning bid amount will then be displayed on the screen.
 
-**A demo will also be available in the repository.**
+You can also run unit tests to verify that the code works and returns the expected result.
+
+**A demo is also available in the repository [DEMO](./src/assets/Kata_Auction_demo.mp4).**

@@ -21,11 +21,10 @@ export class AuctionKataComponent {
 
   constructor(private auctionService: AuctionService) {}
 
-  onBidderAdded(addedBidder: Bidder) {
+  onBidderAdded(addedBidder: Bidder): void {
     if (this.bidders.length == 0) {
       this.bidders?.push(addedBidder);
     } else {
-      // TODO : refacto
       const existingBidder = this.bidders?.find(bidder => bidder.name === addedBidder.name);
 
       if (existingBidder) {
@@ -38,7 +37,7 @@ export class AuctionKataComponent {
     this.bidders = [...this.bidders];
   }
 
-  calculateAuctionWinner(bidders: Bidder[]) {
+  calculateAuctionWinner(bidders: Bidder[]): void {
     if (this.reservePrice === 0) return alert('Veuillez saisir un montant de réserve');
 
     this.result = this.auctionService.calculateAuctionWinner(bidders, this.reservePrice);
