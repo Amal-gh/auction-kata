@@ -32,3 +32,8 @@ Once the application is launched on `http://localhost:4200/`, you can start test
 You can also run unit tests to verify that the code works and returns the expected result.
 
 **A demo is also available in the repository [DEMO](./src/assets/Kata_Auction_demo.mp4).**
+To see a demo video, click the screenshot
+
+<a style="float:right" href="[https://github.com/Amal-gh/auction-kata/blob/master/src/assets/Kata_Auction_demo.mp4)" target="_blank">
+  <img alt="Demo Video" src="./src/assets/Kata_Auction_screen.png" width="500"/>
+</a>
