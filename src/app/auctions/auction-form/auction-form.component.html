@@ -3,13 +3,13 @@
 
   <form (ngSubmit)="addNewBidder()">
     <div class="form-bloc">
-      <label for="bidderName">Nom de l'enchérisseur : </label>
-      <input type="text" id="bidderName" [(ngModel)]="bidderName" name="bidderName" required>
+      <label for="bidderName">Nom de l'enchérisseur :</label>
+      <input type="text" id="bidderName" [(ngModel)]="bidderName" name="bidderName" required />
     </div>
 
     <div class="form-bloc">
-      <label for="bidAmount">Montant de l'enchère : </label>
-      <input type="number" id="bidAmount" min="0" [(ngModel)]="bidAmount" name="bidAmount" required>
+      <label for="bidAmount">Montant de l'enchère :</label>
+      <input type="number" id="bidAmount" min="0" [(ngModel)]="bidAmount" name="bidAmount" required />
     </div>
 
     <button type="submit" class="pill form-button">Ajouter</button>

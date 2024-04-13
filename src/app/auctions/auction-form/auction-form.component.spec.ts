@@ -8,10 +8,9 @@ describe('AuctionFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AuctionFormComponent]
-    })
-    .compileComponents();
-    
+      imports: [AuctionFormComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(AuctionFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

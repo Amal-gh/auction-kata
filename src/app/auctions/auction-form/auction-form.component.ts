@@ -1,18 +1,15 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Bidder } from "../../commun/models/Bidder";
-import { FormsModule } from "@angular/forms";
+import { Bidder } from '../../commun/models/Bidder';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-auction-form',
   standalone: true,
-  imports: [
-    FormsModule
-  ],
+  imports: [FormsModule],
   templateUrl: './auction-form.component.html',
-  styleUrl: './auction-form.component.css'
+  styleUrl: './auction-form.component.css',
 })
 export class AuctionFormComponent {
-
   @Output() bidderAdded: EventEmitter<any> = new EventEmitter<any>();
 
   bidderName: string = '';
@@ -20,11 +17,10 @@ export class AuctionFormComponent {
 
   addNewBidder(): void {
     if (this.bidderName !== '' && this.bidAmount !== '') {
-
       const bidder: Bidder = {
         name: this.bidderName,
-        bids: [Number(this.bidAmount)]
-      }
+        bids: [Number(this.bidAmount)],
+      };
 
       this.bidderAdded.emit(bidder);
 
@@ -32,7 +28,7 @@ export class AuctionFormComponent {
     }
   }
 
-  resetAuctionForm () {
+  resetAuctionForm(): void {
     this.bidderName = '';
     this.bidAmount = '';
   }

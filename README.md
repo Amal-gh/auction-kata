@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
-You can find the user Manuel below.  
+You can find more details on what has been done in the file [WHAT'S DONE](./WHATS_DONE.md).
+
+You can find the user Manuel below.
 
 ## Development server
 
@@ -12,8 +14,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng test` to execute the unit tests via Jest
 
-## User Manual 
+## User Manual
+
 Once the application is launched on `http://localhost:4200/`, you can start testing it by adding new bidders:
+
 - For each new addition, you need to provide their name and the bid amount.
 - Once the new bidder's data is entered, click the "Add" button.
 

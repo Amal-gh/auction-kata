@@ -8,10 +8,9 @@ describe('AuctionKataComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AuctionKataComponent]
-    })
-    .compileComponents();
-    
+      imports: [AuctionKataComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(AuctionKataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
