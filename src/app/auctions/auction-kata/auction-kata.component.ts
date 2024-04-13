@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {Bidder} from "../../commun/models/Bidder";
-import {Winner} from "../../commun/models/Winner";
-import {AuctionService} from "../../commun/services/auction.service";
-import {AuctionFormComponent} from "../auction-form/auction-form.component";
-import {AuctionListComponent} from "../auction-list/auction-list.component";
-import {NgIf} from "@angular/common";
-import {FormsModule} from "@angular/forms";
+import { Bidder } from "../../commun/models/Bidder";
+import { Winner } from "../../commun/models/Winner";
+import { AuctionService } from "../../commun/services/auction.service";
+import { AuctionFormComponent } from "../auction-form/auction-form.component";
+import { AuctionListComponent } from "../auction-list/auction-list.component";
+import { NgIf } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: 'app-auction-kata',
@@ -25,17 +25,11 @@ export class AuctionKataComponent {
   reservePrice: number = 0;
 
 
-  constructor(private auctionService: AuctionService) {
-  }
+  constructor(private auctionService: AuctionService) {}
 
   onBidderAdded(addedBidder: Bidder) {
 
-    console.log("Onadd !!")
-    // this.bidders.push(bidder);
-
-
     if (this.bidders.length == 0) {
-      console.log("vide :");
       this.bidders?.push(addedBidder);
     } else {
       // TODO : refacto
@@ -49,15 +43,14 @@ export class AuctionKataComponent {
     }
 
     this.bidders= [...this.bidders];
-    console.log('biders : ', this.bidders);
   }
 
-  calculateAuctionWinner(bidders: Bidder[], reservePrice: number) {
+  calculateAuctionWinner(bidders: Bidder[]) {
 
-    if (reservePrice === 0) return alert("Veuillez saisir un montant de réserve");
+    if (this.reservePrice === 0) return alert("Veuillez saisir un montant de réserve");
 
     this.result =
-      this.auctionService.calculateAuctionWinner(bidders, reservePrice);
+      this.auctionService.calculateAuctionWinner(bidders, this.reservePrice);
   }
 
 }

@@ -13,33 +13,11 @@
       <td mat-cell *matCellDef="let bidder"> {{bidder.bids.join(' €, ')}} €</td>
     </ng-container>
 
-
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-
-
-  <!--  <table>-->
-<!--    <thead>-->
-<!--    <tr>-->
-<!--      <th>Nom de l'enchérisseur</th>-->
-<!--      <th>Montant des enchères</th>-->
-<!--    </tr>-->
-<!--    </thead>-->
-<!--    <tbody>-->
-<!--    @for (bidder of bidders; track bidder.name) {-->
-<!--    <tr>-->
-<!--      <td>{{ bidder.name }}</td>-->
-<!--      <td>{{ bidder.bids.join(', ') }}</td>-->
-<!--    </tr>-->
-<!--    }-->
-<!--&lt;!&ndash;    <tr *ngFor="let bidder of bidders">&ndash;&gt;-->
-<!--&lt;!&ndash;      <td>{{ bidder.name }}</td>&ndash;&gt;-->
-<!--&lt;!&ndash;      <td>{{ bidder.bids.join(', ') }}</td>&ndash;&gt;-->
-<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
-<!--    </tbody>-->
-<!--  </table>-->
 </div>
+
 <div *ngIf="bidders.length == 0" class="text-content">
   Il n'existe pas d'enchérisseur pour le moment, veuillez en créer un.
 </div>
